@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Selenium_Docker_Example</RootNamespace>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Agoda.Analyzers" Version="1.0.517">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+      <PackageReference Include="nunit" Version="3.13.2" />
+
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+      <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
+      <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+      <PackageReference Include="GitHubActionsTestLogger" Version="1.1.2" />
+      <PackageReference Include="Selenium.Support" Version="4.0.0-beta2" />
+      <PackageReference Include="Selenium.WebDriver" Version="4.0.0-beta2" />
+      <PackageReference Include="Shouldly" Version="4.0.3" /> 
+    </ItemGroup>
+
+</Project>

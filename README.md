@@ -1,6 +1,6 @@
 # Selenium Docker Example
 
-Sample code is here form the [video](https://youtu.be/yGFYufxM1OE) and the [blog]()
+Sample code is here form the [video](https://youtu.be/yGFYufxM1OE) and the [blog](https://beerandserversdontmix.com/2021/05/22/selenium-debugging-with-docker-and-your-ide/)
 
 Below is teh boiler plate chrome options I spoke about in the video
 

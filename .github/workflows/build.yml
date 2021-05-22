@@ -1,0 +1,17 @@
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - master
+
+jobs:  
+  pipeline: 
+    name: Pack and Publish nuget
+    runs-on: [self-hosted, linux, x64]
+    steps: 
+    - uses: actions/checkout@v2
+
+    - name: Run Integration-Tests
+      working-directory: ${{ env.GIT_REPO_ROOT }}
+      run: docker-compose -f docker-compose.integration.yml -f docker-compose.yml up --build --abort-on-container-exit

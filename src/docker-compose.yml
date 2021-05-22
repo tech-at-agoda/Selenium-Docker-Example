@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  selenium:
+    image: selenium/standalone-chrome:4.0.0-beta-2-20210319
+    ports: 
+      - 4444:4444
+    environment: 
+      - TZ=Asia/Bangkok
+      - SCREEN_WIDTH=1920
+      - SCREEN_HEIGHT=1080
+      - SCREEN_DEPTH=24
+      - NODE_MAX_INSTANCES=45
+      - NODE_MAX_SESSION=45
+      - MAX_SESSION=45
+      - MAX_INSTANCES=45
+      - no_proxy=allpages
+      - http_proxy=http://hk-agcprx-2000.corpdmz.agoda.local:8080
+      - https_proxy=http://hk-agcprx-2000.corpdmz.agoda.local:8080
+    volumes: 
+      - /dev/shm:/dev/shm
